@@ -12,7 +12,7 @@ type CourseGoalProps = {
 const CourseGoals = ({title, id, children, onDelete}: CourseGoalProps) => {
   return (
     <div>
-        <p className='title'>{title}</p> 
+        <p>{title}</p> 
         {children}
         <button onClick={() => onDelete(id)}>Delete</button>
     </div>

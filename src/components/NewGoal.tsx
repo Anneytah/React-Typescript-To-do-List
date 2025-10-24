@@ -14,18 +14,18 @@ event?.preventDefault()
 const enteredGoal = goal.current!.value;
 const enteredSummary = summary.current!.value;
 
-// event.currentTarget.reset();
+event.currentTarget.reset();
 onAddGoal(enteredGoal, enteredSummary);
 }
 
   return (
     <form onSubmit={handleSubmit}>
        <p>
-        <label htmlFor='goal' className='label' style={{paddingTop: 50}}>YOUR GOALS</label>
+        <label htmlFor='goal' style={{paddingTop: 50}}>YOUR GOALS</label>
         <input id='goal' type='text' ref={goal} />
        </p>
        <p>
-        <label htmlFor='goal' className='label'>SHORT SUMMARY</label>
+        <label htmlFor='goal'>SHORT SUMMARY</label>
         <input id='summary' type='text' ref={summary} />
        </p>
        <button className='addbutton'>Add Goal</button>
